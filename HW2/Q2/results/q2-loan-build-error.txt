@@ -1,0 +1,5 @@
+Q2 build: October 20, 2026
+Source: src/main/java/loanEngine.java
+Diagnostic transcribed from the IntelliJ Build window:
+java: class LoanEngine is public, should be declared in a file named LoanEngine.java
+JUnit: not run; compilation blocked.

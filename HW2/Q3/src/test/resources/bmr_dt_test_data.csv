@@ -1,0 +1,24 @@
+id,age,weight,height,gender,expectedKind,expectedValue,expectedCategory
+DT01,-1,150,68,M,ERROR,Age,
+DT02,0,150,68,M,ERROR,Age,
+DT03,120,150,68,M,ERROR,Age,
+DT04,121,150,68,M,ERROR,Age,
+DT05,30,-1,68,M,ERROR,Weight,
+DT06,30,0,68,M,ERROR,Weight,
+DT07,30,1000,68,M,ERROR,Weight,
+DT08,30,1001,68,M,ERROR,Weight,
+DT09,30,150,-1,M,ERROR,Height,
+DT10,30,150,0,M,ERROR,Height,
+DT11,30,150,100,M,ERROR,Height,
+DT12,30,150,101,M,ERROR,Height,
+DT13,30,150,68,X,ERROR,Invalid gender,
+DT14,30,150,68,,ERROR,Invalid gender,
+DT15,60,100,60,M,VALUE,1043.00,Low Metabolism
+DT16,30,150,68,M,VALUE,1660.10,Moderate Metabolism
+DT17,30,200,72,M,VALUE,2022.40,High Metabolism
+DT18,30,300,76,M,VALUE,2696.20,Very High Metabolism
+DT19,60,100,60,F,VALUE,1090.00,Low Metabolism
+DT20,30,150,65,F,VALUE,1472.00,Moderate Metabolism
+DT21,30,230,70,F,VALUE,1843.50,High Metabolism
+DT22,30,390,76,F,VALUE,2567.70,Very High Metabolism
+DT23,30,150,68.5,M,VALUE,1666.45,Moderate Metabolism

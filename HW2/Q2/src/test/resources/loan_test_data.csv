@@ -1,0 +1,12 @@
+loanAmount,creditScore,termMonths,isExistingCustomer,expectedPayment,expectedException
+20000,600,12,false,1739.77,NONE
+20000,700,36,true,606.18,NONE
+20000,780,60,false,377.42,NONE
+20000,700,24,false,881.91,NONE
+20000,700,48,false,469.70,NONE
+20000,600,24,true,904.55,NONE
+20000,780,60,true,375.14,NONE
+20000,579,36,false,,IllegalArgumentException
+20000,700,30,false,,IllegalArgumentException
+999,700,36,false,,IllegalArgumentException
+50001,700,36,false,,IllegalArgumentException

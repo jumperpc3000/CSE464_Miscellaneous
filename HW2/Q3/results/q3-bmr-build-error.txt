@@ -1,0 +1,6 @@
+Q3 build: October 20, 2026, 1:14 PM
+Source: src/main/java/BmrCalc.java, line 36
+Diagnostic transcribed from the IntelliJ Build window:
+java: variable bmr is already defined in method main(java.lang.String[])
+JUnit: not run; compilation blocked.
+Coverage: not measured.
