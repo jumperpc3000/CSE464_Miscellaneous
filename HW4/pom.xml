@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>edu.asu.cse464</groupId>
     <artifactId>hw4</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -22,8 +23,6 @@
     </dependencies>
 
     <build>
-        <sourceDirectory>Q1/src</sourceDirectory>
-        <testSourceDirectory>Q1/test</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -39,9 +38,8 @@
                         <configuration>
                             <skipAddSourceIfMissing>true</skipAddSourceIfMissing>
                             <sources>
-                                <source>Q2_Original/src</source>
-                                <source>Q2_DataFlow/src</source>
-                                <source>Q2_Bonus_Fixed/src</source>
+                                <source>Q1/src</source>
+                                <source>Q2/src</source>
                                 <source>Q3/src</source>
                             </sources>
                         </configuration>
@@ -55,20 +53,21 @@
                         <configuration>
                             <skipAddTestSourceIfMissing>true</skipAddTestSourceIfMissing>
                             <sources>
-                                <source>Q2_Original/test</source>
-                                <source>Q2_DataFlow/test</source>
-                                <source>Q2_Bonus_Fixed/test</source>
+                                <source>Q1/test</source>
+                                <source>Q2/test</source>
                                 <source>Q3/test</source>
                             </sources>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.14.0</version>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
