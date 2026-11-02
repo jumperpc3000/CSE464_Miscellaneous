@@ -34,7 +34,7 @@ public class CommonElementsTest {
     }
 
     @Test
-    void repeatedElementsRemainUnique() {
+    void a1RepeatedElementsRemainUnique() {
         assertEquals(Set.of("A", "B"),
                 CommonElementsWrapper.CommonElements(
                         new String[] {"A", "A", "B"},
@@ -42,27 +42,27 @@ public class CommonElementsTest {
     }
 
     @Test
-    void r2NullFirstArrayThrows() {
+    void a2NullFirstArrayThrows() {
         assertThrows(NullPointerException.class,
                 () -> CommonElementsWrapper.CommonElements(
                         null, new String[] {"A"}));
     }
 
     @Test
-    void r3NullSecondArrayThrowsWhenFirstNonempty() {
+    void a3NullSecondArrayThrowsWhenFirstNonempty() {
         assertThrows(NullPointerException.class,
                 () -> CommonElementsWrapper.CommonElements(
                         new String[] {"A"}, null));
     }
 
     @Test
-    void r4BothNullArraysThrow() {
+    void a4BothNullArraysThrow() {
         assertThrows(NullPointerException.class,
                 () -> CommonElementsWrapper.CommonElements(null, null));
     }
 
     @Test
-    void r5EmptyFirstArraySkipsNullSecond() {
+    void a5EmptyFirstArraySkipsNullSecond() {
         assertEquals(Collections.emptySet(),
                 CommonElementsWrapper.CommonElements(new String[] {}, null));
     }
